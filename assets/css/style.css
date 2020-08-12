@@ -85,6 +85,18 @@ code {
 pre {
   background: rgb(54, 54, 54);
   color: #ebe39d;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  color: #a912bd;
+}
+
+a {
+  color: #4caf50;
 }
 
 @media screen and (max-width: 700px) {
