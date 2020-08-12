@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #263238;
+  color: #cfd4d4;
+  font-family: "Noto Sans", sans-serif;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 220px;
+  background-color: #000000;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  color: rgb(255, 255, 255);
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+}
+
+header {
+  color: #0694e6;
+}
+
+.sidebar a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+#main-doc {
+  border-left: 1px solid rgb(1, 147, 231);
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: auto;
+}
+
+#heading {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 5px;
+  font-size: 2rem;
+  color: #f4f7f7;
+  border-bottom: 1px solid #a9bb09;
+}
+section {
+  margin: 2rem;
+}
+header {
+  font-family: "Dosis", sans-serif;
+  font-size: 3rem;
+  text-align: left;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+p {
+  line-height: 1.8rem;
+}
+li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+li b {
+  text-decoration: underline;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+code {
+  background: rgb(54, 54, 54);
+  color: #ebe39d;
+}
+pre {
+  background: rgb(54, 54, 54);
+  color: #ebe39d;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  #main-doc {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
