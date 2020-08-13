@@ -648,45 +648,74 @@ mt.subtraction(2,3,4)
 
         <!-- DETAILS OF SORT METHODS -->
         <section class="main-section">
-          <!-- Addition -->
-          <div id="addition1">
-            <h3>Addition</h3>
+          <!-- Bubble Sort -->
+          <div id="bubble">
+            <h3>Bubble Sort</h3>
 
-            <span class="sub">Passing array to add numbers</span>
-
-            <pre>
-    mt.addition([2,3,4,5])
-    
-    // 14
-            </pre>
-            <span class="sub">Passing arguments to add numbers</span>
+            <span class="sub">Passing array and get sorted array</span>
 
             <pre>
-    mt.addition(2,3,4,5)
+    mt.bubbleSort([3,2,4]) 
     
-    // 14
+    // [2,3,4]
             </pre>
           </div>
 
-          <!-- Subtraction -->
-          <div id="subtraction1">
-            <h3>Subtraction</h3>
-            <span class="sub">Passing array to add numbers</span>
+          <!-- Merge Sort -->
+          <div id="merge">
+            <h3>Merge Sort</h3>
+
+            <span class="sub">Passing array and get sorted array</span>
 
             <pre>
-    mt.subtraction([2,3,4])
+    mt.mergeSort([3,2,4], "des") 
     
-    // -5
-              </pre
-            >
-            <span class="sub">Passing arguments to add numbers</span>
+    // [4,3,2]
+            </pre>
+            <pre>
+    mt.mergeSort([3,2,4], "asc") 
+    
+    // [2,3,4]
+            </pre>
+          </div>
+
+          <!-- Quick Sort -->
+          <div id="quick">
+            <h3>Quick Sort</h3>
+
+            <span class="sub">Passing array and get sorted array</span>
 
             <pre>
-    mt.subtraction(2,3,4)
+    mt.quickSort([3,2,4]) 
     
-    // -5
-              </pre
-            >
+    // [2,3,4]
+            </pre>
+          </div>
+
+           <!-- Selection Sort -->
+           <div id="selection">
+            <h3>Selection Sort</h3>
+
+            <span class="sub">Passing array and get sorted array</span>
+
+            <pre>
+    mt.selectionSort([3,2,4]) 
+    
+    // [2,3,4]
+            </pre>
+          </div>
+
+          <!-- Insertion Sort -->
+          <div id="insertion">
+            <h3>Insertion Sort</h3>
+
+            <span class="sub">Passing array and get sorted array</span>
+
+            <pre>
+    mt.insertionSort([3,2,4]) 
+    
+    // [2,3,4]
+            </pre>
           </div>
         </section>
       </div>
