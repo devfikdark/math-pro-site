@@ -317,9 +317,6 @@ mt.addition(2,3,4)
               <a href="#stringtonumber"><i>Convert string to number</i></a>
             </li>
             <li>
-              <a href="#remainder"><i>Remainder of two numbers</i></a>
-            </li>
-            <li>
               <a href="#convertnumber"
                 ><i
                   >Number conversion (Binary, Octal, Decimal, Hexadecimal)</i
@@ -331,46 +328,81 @@ mt.addition(2,3,4)
 
         <!-- DETAILS OF CONVERSION METHODS -->
         <section class="main-section">
-          <!-- Addition -->
-          <div id="addition1">
-            <h3>Addition</h3>
-
-            <span class="sub">Passing array to add numbers</span>
-
-            <pre>
-mt.addition([2,3,4,5])
-
-// 14
-              </pre
-            >
-            <span class="sub">Passing arguments to add numbers</span>
+          <!-- Digit To Array -->
+          <div id="digitoarray">
+            <h3>Digit To Array</h3>
+            <span class="sub">Passing arguments and convert digit to array</span>
 
             <pre>
-mt.addition(2,3,4,5)
+mt.digitToArray(234)
 
-// 14
+// [1,2,3]
               </pre
             >
           </div>
 
-          <!-- Subtraction -->
-          <div id="subtraction1">
-            <h3>Subtraction</h3>
-            <span class="sub">Passing array to add numbers</span>
+          <!-- Number To Chars -->
+          <div id="numbertochar">
+            <h3>Number To Chars</h3>
+            <span class="sub">Passing arguments and convert number to chars</span>
 
             <pre>
-  mt.subtraction([2,3,4])
-  
-  // -5
-                </pre
+mt.numberToChars(51) 
+
+// AZ
+              </pre
             >
-            <span class="sub">Passing arguments to add numbers</span>
+          </div>
+
+          <!-- Degs To Rads -->
+          <div id="degstorads">
+            <h3>Degs To Rads</h3>
+            <span class="sub">Passing arguments and convert degs to rads</span>
 
             <pre>
-  mt.subtraction(2,3,4)
-  
-  // -5
-                </pre
+mt.degsToRads(5)
+
+// 0.08726646259971647
+              </pre
+            >
+          </div>
+
+          <!-- Rads To Degs -->
+          <div id="radtodeg">
+            <h3>Rads To Degs</h3>
+            <span class="sub">Passing arguments and convert rads to degs</span>
+
+            <pre>
+mt.radsToDegs(0.08726646259971647)
+
+// 5
+              </pre
+            >
+          </div>
+
+          <!-- String To Number -->
+          <div id="stringtonumber">
+            <h3>String To Number</h3>
+            <span class="sub">Passing arguments and convert string to number</span>
+
+            <pre>
+mt.stringToNumber("25") 
+
+// 25
+              </pre
+            >
+          </div>
+
+          <!-- Convert Number -->
+          <div id="convertnumber">
+            <h3>Convert Number</h3>
+            <span class="sub">Passing arguments and convert convert number</span>
+
+            <pre>
+mt.convertNumber('100111', 2, 16)
+
+// 27
+              </pre
             >
           </div>
         </section>
