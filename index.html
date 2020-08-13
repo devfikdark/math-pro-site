@@ -558,48 +558,65 @@ mt.subtraction(2,3,4)
             <li>
               <a href="#linear"><i>Linear search</i></a>
             </li>
+            <li>
+              <a href="#jump"><i>Jump search</i></a>
+            </li>
+            <li>
+              <a href="#ternary"><i>Ternary Search</i></a>
+            </li>
           </ul>
         </section>
 
         <!-- DETAILS OF SEARCH METHODS -->
         <section class="main-section">
-          <!-- Addition -->
-          <div id="addition1">
-            <h3>Addition</h3>
+          <!-- Binary search -->
+          <div id="binary">
+            <h3>Binary search</h3>
 
-            <span class="sub">Passing array to add numbers</span>
-
-            <pre>
-    mt.addition([2,3,4,5])
-    
-    // 14
-            </pre>
-            <span class="sub">Passing arguments to add numbers</span>
+            <span class="sub">Passing array and find target number</span>
 
             <pre>
-    mt.addition(2,3,4,5)
+    mt.binarySearch([2,3,4], 4) 
     
-    // 14
+    // 2
             </pre>
           </div>
 
-          <!-- Subtraction -->
-          <div id="subtraction1">
-            <h3>Subtraction</h3>
-            <span class="sub">Passing array to add numbers</span>
+          <!-- Linear search -->
+          <div id="linear">
+            <h3>Linear search</h3>
+            <span class="sub">Passing array and find target number</span>
 
             <pre>
-    mt.subtraction([2,3,4])
+    mt.linearSearch([3,4,2], 4)
     
-    // -5
+    // 1
               </pre
             >
-            <span class="sub">Passing arguments to add numbers</span>
+          </div>
+
+          <!-- Jump search -->
+          <div id="jump">
+            <h3>Jump Search</h3>
+            <span class="sub">Passing array and find target number</span>
 
             <pre>
-    mt.subtraction(2,3,4)
+    mt.jumpSearch([3,4,2], 4)
     
-    // -5
+    // 1
+              </pre
+            >
+          </div>
+
+          <!-- Ternary Search -->
+          <div id="ternary">
+            <h3>Ternary Search</h3>
+            <span class="sub">Passing array and find target number</span>
+
+            <pre>
+    mt.ternarySearch([3,4,2], 4)
+    
+    // 1
               </pre
             >
           </div>
