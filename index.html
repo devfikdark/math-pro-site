@@ -106,7 +106,7 @@ console.log(mt.addition(5, 6));
               <a href="#addition"><i>Add numbers</i></a>
             </li>
             <li>
-              <a href="#subtration"><i>Subtract numbers</i></a>
+              <a href="#subtraction"><i>Subtract numbers</i></a>
             </li>
             <li>
               <a href="#multiplication"><i>Multiply numbers</i></a>
@@ -138,17 +138,17 @@ console.log(mt.addition(5, 6));
             <span class="sub">Passing array to add numbers</span>
 
             <pre>
-mt.addition([2,3,4,5])
+mt.addition([2,3,4])
 
-// 14
+// 9
               </pre
             >
             <span class="sub">Passing arguments to add numbers</span>
 
             <pre>
-mt.addition(2,3,4,5)
+mt.addition(2,3,4)
 
-// 14
+// 9
               </pre
             >
           </div>
@@ -156,7 +156,7 @@ mt.addition(2,3,4,5)
           <!-- Subtraction -->
           <div id="subtraction">
             <h3>Subtraction</h3>
-            <span class="sub">Passing array to add numbers</span>
+            <span class="sub">Passing array to subtraction numbers</span>
 
             <pre>
   mt.subtraction([2,3,4])
@@ -164,12 +164,132 @@ mt.addition(2,3,4,5)
   // -5
                 </pre
             >
-            <span class="sub">Passing arguments to add numbers</span>
+            <span class="sub">Passing arguments to subtraction numbers</span>
 
             <pre>
   mt.subtraction(2,3,4)
   
   // -5
+                </pre
+            >
+          </div>
+
+          <!-- multiplication -->
+          <div id="multiplication">
+            <h3>Multiplication</h3>
+            <span class="sub">Passing array to multiply numbers</span>
+
+            <pre>
+  mt.multiplication([2,3,4])
+  
+  // 24
+                </pre
+            >
+            <span class="sub">Passing arguments to multiply numbers</span>
+
+            <pre>
+  mt.multiplication(2,3,4)
+  
+  // 24
+                </pre
+            >
+          </div>
+
+          <!-- multiplication -->
+          <div id="division">
+            <h3>Division</h3>
+            <span class="sub">Passing array to division numbers</span>
+
+            <pre>
+  mt.division([2,3,4])
+  
+  // 0.16667
+                </pre
+            >
+            <span class="sub">Passing arguments to division numbers</span>
+
+            <pre>
+  mt.division(2,3,4)
+  
+  // 0.16667
+                </pre
+            >
+          </div>
+
+          <!-- Average -->
+          <div id="average">
+            <h3>Average</h3>
+            <span class="sub">Passing array to average numbers</span>
+
+            <pre>
+  mt.average([2,3,4])
+  
+  // 3
+                </pre
+            >
+            <span class="sub">Passing arguments to average numbers</span>
+
+            <pre>
+  mt.average(2,3,4)
+  
+  // 3
+                </pre
+            >
+          </div>
+
+          <!-- Remainder -->
+          <div id="remainder">
+            <h3>Remainder</h3>
+                </pre
+            >
+            <span class="sub">Passing arguments to remainder numbers</span>
+
+            <pre>
+  mt.getRemainder(5,2)
+  
+  // 1
+                </pre
+            >
+          </div>
+
+          <!-- Minimum -->
+          <div id="minimum">
+            <h3>Minimum</h3>
+            <span class="sub">Passing array to minimum numbers</span>
+
+            <pre>
+  mt.getMinimum([2,3,4])
+  
+  // 2
+                </pre
+            >
+            <span class="sub">Passing arguments to minimum numbers</span>
+
+            <pre>
+  mt.getMinimum(2,3,4)
+  
+  // 2
+                </pre
+            >
+          </div>
+
+          <!-- Maximum -->
+          <div id="maximum">
+            <h3>Maximum</h3>
+            <span class="sub">Passing array to maximum numbers</span>
+
+            <pre>
+  mt.getMaximum([2,3,4])
+  
+  // 4
+                </pre
+            >
+            <span class="sub">Passing arguments to maximum numbers</span>
+
+            <pre>
+  mt.getMaximum(2,3,4)
+  
+  // 4
                 </pre
             >
           </div>
@@ -197,9 +317,6 @@ mt.addition(2,3,4,5)
               <a href="#stringtonumber"><i>Convert string to number</i></a>
             </li>
             <li>
-              <a href="#remainder"><i>Remainder of two numbers</i></a>
-            </li>
-            <li>
               <a href="#convertnumber"
                 ><i
                   >Number conversion (Binary, Octal, Decimal, Hexadecimal)</i
@@ -211,46 +328,81 @@ mt.addition(2,3,4,5)
 
         <!-- DETAILS OF CONVERSION METHODS -->
         <section class="main-section">
-          <!-- Addition -->
-          <div id="addition">
-            <h3>Addition</h3>
-
-            <span class="sub">Passing array to add numbers</span>
-
-            <pre>
-mt.addition([2,3,4,5])
-
-// 14
-              </pre
-            >
-            <span class="sub">Passing arguments to add numbers</span>
+          <!-- Digit To Array -->
+          <div id="digitoarray">
+            <h3>Digit To Array</h3>
+            <span class="sub">Passing arguments and convert digit to array</span>
 
             <pre>
-mt.addition(2,3,4,5)
+mt.digitToArray(234)
 
-// 14
+// [1,2,3]
               </pre
             >
           </div>
 
-          <!-- Subtraction -->
-          <div id="subtraction">
-            <h3>Subtraction</h3>
-            <span class="sub">Passing array to add numbers</span>
+          <!-- Number To Chars -->
+          <div id="numbertochar">
+            <h3>Number To Chars</h3>
+            <span class="sub">Passing arguments and convert number to chars</span>
 
             <pre>
-  mt.subtraction([2,3,4])
-  
-  // -5
-                </pre
+mt.numberToChars(51) 
+
+// AZ
+              </pre
             >
-            <span class="sub">Passing arguments to add numbers</span>
+          </div>
+
+          <!-- Degs To Rads -->
+          <div id="degstorads">
+            <h3>Degs To Rads</h3>
+            <span class="sub">Passing arguments and convert degs to rads</span>
 
             <pre>
-  mt.subtraction(2,3,4)
-  
-  // -5
-                </pre
+mt.degsToRads(5)
+
+// 0.08726646259971647
+              </pre
+            >
+          </div>
+
+          <!-- Rads To Degs -->
+          <div id="radtodeg">
+            <h3>Rads To Degs</h3>
+            <span class="sub">Passing arguments and convert rads to degs</span>
+
+            <pre>
+mt.radsToDegs(0.08726646259971647)
+
+// 5
+              </pre
+            >
+          </div>
+
+          <!-- String To Number -->
+          <div id="stringtonumber">
+            <h3>String To Number</h3>
+            <span class="sub">Passing arguments and convert string to number</span>
+
+            <pre>
+mt.stringToNumber("25") 
+
+// 25
+              </pre
+            >
+          </div>
+
+          <!-- Convert Number -->
+          <div id="convertnumber">
+            <h3>Convert Number</h3>
+            <span class="sub">Passing arguments and convert convert number</span>
+
+            <pre>
+mt.convertNumber('100111', 2, 16)
+
+// 27
+              </pre
             >
           </div>
         </section>
@@ -291,7 +443,7 @@ mt.addition(2,3,4,5)
         <!-- DETAILS OF CHECK METHODS -->
         <section class="main-section">
           <!-- Addition -->
-          <div id="addition">
+          <div id="addition1">
             <h3>Addition</h3>
 
             <span class="sub">Passing array to add numbers</span>
@@ -313,7 +465,7 @@ mt.addition(2,3,4,5)
           </div>
 
           <!-- Subtraction -->
-          <div id="subtraction">
+          <div id="subtraction1">
             <h3>Subtraction</h3>
             <span class="sub">Passing array to add numbers</span>
 
@@ -385,7 +537,7 @@ mt.subtraction(2,3,4)
         <!-- DETAILS OF NUMBER METHODS -->
         <section class="main-section">
           <!-- Addition -->
-          <div id="addition">
+          <div id="addition1">
             <h3>Addition</h3>
 
             <span class="sub">Passing array to add numbers</span>
@@ -407,7 +559,7 @@ mt.subtraction(2,3,4)
           </div>
 
           <!-- Subtraction -->
-          <div id="subtraction">
+          <div id="subtraction1">
             <h3>Subtraction</h3>
             <span class="sub">Passing array to add numbers</span>
 
@@ -438,48 +590,65 @@ mt.subtraction(2,3,4)
             <li>
               <a href="#linear"><i>Linear search</i></a>
             </li>
+            <li>
+              <a href="#jump"><i>Jump search</i></a>
+            </li>
+            <li>
+              <a href="#ternary"><i>Ternary Search</i></a>
+            </li>
           </ul>
         </section>
 
         <!-- DETAILS OF SEARCH METHODS -->
         <section class="main-section">
-          <!-- Addition -->
-          <div id="addition">
-            <h3>Addition</h3>
+          <!-- Binary search -->
+          <div id="binary">
+            <h3>Binary search</h3>
 
-            <span class="sub">Passing array to add numbers</span>
-
-            <pre>
-    mt.addition([2,3,4,5])
-    
-    // 14
-            </pre>
-            <span class="sub">Passing arguments to add numbers</span>
+            <span class="sub">Passing array and find target number</span>
 
             <pre>
-    mt.addition(2,3,4,5)
+    mt.binarySearch([2,3,4], 4) 
     
-    // 14
+    // 2
             </pre>
           </div>
 
-          <!-- Subtraction -->
-          <div id="subtraction">
-            <h3>Subtraction</h3>
-            <span class="sub">Passing array to add numbers</span>
+          <!-- Linear search -->
+          <div id="linear">
+            <h3>Linear search</h3>
+            <span class="sub">Passing array and find target number</span>
 
             <pre>
-    mt.subtraction([2,3,4])
+    mt.linearSearch([3,4,2], 4)
     
-    // -5
+    // 1
               </pre
             >
-            <span class="sub">Passing arguments to add numbers</span>
+          </div>
+
+          <!-- Jump search -->
+          <div id="jump">
+            <h3>Jump Search</h3>
+            <span class="sub">Passing array and find target number</span>
 
             <pre>
-    mt.subtraction(2,3,4)
+    mt.jumpSearch([3,4,2], 4)
     
-    // -5
+    // 1
+              </pre
+            >
+          </div>
+
+          <!-- Ternary Search -->
+          <div id="ternary">
+            <h3>Ternary Search</h3>
+            <span class="sub">Passing array and find target number</span>
+
+            <pre>
+    mt.ternarySearch([3,4,2], 4)
+    
+    // 1
               </pre
             >
           </div>
@@ -511,45 +680,74 @@ mt.subtraction(2,3,4)
 
         <!-- DETAILS OF SORT METHODS -->
         <section class="main-section">
-          <!-- Addition -->
-          <div id="addition">
-            <h3>Addition</h3>
+          <!-- Bubble Sort -->
+          <div id="bubble">
+            <h3>Bubble Sort</h3>
 
-            <span class="sub">Passing array to add numbers</span>
-
-            <pre>
-    mt.addition([2,3,4,5])
-    
-    // 14
-            </pre>
-            <span class="sub">Passing arguments to add numbers</span>
+            <span class="sub">Passing array and get sorted array</span>
 
             <pre>
-    mt.addition(2,3,4,5)
+    mt.bubbleSort([3,2,4]) 
     
-    // 14
+    // [2,3,4]
             </pre>
           </div>
 
-          <!-- Subtraction -->
-          <div id="subtraction">
-            <h3>Subtraction</h3>
-            <span class="sub">Passing array to add numbers</span>
+          <!-- Merge Sort -->
+          <div id="merge">
+            <h3>Merge Sort</h3>
+
+            <span class="sub">Passing array and get sorted array</span>
 
             <pre>
-    mt.subtraction([2,3,4])
+    mt.mergeSort([3,2,4], "des") 
     
-    // -5
-              </pre
-            >
-            <span class="sub">Passing arguments to add numbers</span>
+    // [4,3,2]
+            </pre>
+            <pre>
+    mt.mergeSort([3,2,4], "asc") 
+    
+    // [2,3,4]
+            </pre>
+          </div>
+
+          <!-- Quick Sort -->
+          <div id="quick">
+            <h3>Quick Sort</h3>
+
+            <span class="sub">Passing array and get sorted array</span>
 
             <pre>
-    mt.subtraction(2,3,4)
+    mt.quickSort([3,2,4]) 
     
-    // -5
-              </pre
-            >
+    // [2,3,4]
+            </pre>
+          </div>
+
+           <!-- Selection Sort -->
+           <div id="selection">
+            <h3>Selection Sort</h3>
+
+            <span class="sub">Passing array and get sorted array</span>
+
+            <pre>
+    mt.selectionSort([3,2,4]) 
+    
+    // [2,3,4]
+            </pre>
+          </div>
+
+          <!-- Insertion Sort -->
+          <div id="insertion">
+            <h3>Insertion Sort</h3>
+
+            <span class="sub">Passing array and get sorted array</span>
+
+            <pre>
+    mt.insertionSort([3,2,4]) 
+    
+    // [2,3,4]
+            </pre>
           </div>
         </section>
       </div>
