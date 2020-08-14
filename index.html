@@ -59,7 +59,7 @@
             You can install <b>math-pro</b> from
             <a href="https://npmjs.com/" target="_blank">NPM</a>. Go to the link
             and search for <b>math-pro</b> or you can install the package by
-            writing on you command line <br /><code>npm i math-pro</code><br />
+            writing on your command line <br /><code>npm i math-pro</code><br />
             Wait for few seconds and the package will be installed in your
             project.
           </p>
@@ -73,7 +73,8 @@
             format.
           </p>
           <br />
-          <b>ES5 format</b>
+          <b>ES5 format</b><br /><br />
+          <span>Import full module</span>
           <pre>
 const mt = require('math-pro'); 
 
@@ -81,6 +82,13 @@ console.log(mt.addition(5, 6));
 // 11
 </pre
           >
+          <span>Import specific module</span><br />
+          <pre>
+const mt = require('math-pro/lib/basic')
+
+console.log(mt.addition(5,6));
+// 11
+          </pre>
 
           <b>ES6 format</b>
           <pre>
@@ -240,8 +248,7 @@ mt.addition(2,3,4)
           <!-- Remainder -->
           <div id="remainder">
             <h3>Remainder</h3>
-                </pre
-            >
+
             <span class="sub">Passing arguments to remainder numbers</span>
 
             <pre>
@@ -331,7 +338,9 @@ mt.addition(2,3,4)
           <!-- Digit To Array -->
           <div id="digitoarray">
             <h3>Digit To Array</h3>
-            <span class="sub">Passing arguments and convert digit to array</span>
+            <span class="sub"
+              >Passing arguments and convert digit to array</span
+            >
 
             <pre>
 mt.digitToArray(234)
@@ -344,7 +353,9 @@ mt.digitToArray(234)
           <!-- Number To Chars -->
           <div id="numbertochar">
             <h3>Number To Chars</h3>
-            <span class="sub">Passing arguments and convert number to chars</span>
+            <span class="sub"
+              >Passing arguments and convert number to chars</span
+            >
 
             <pre>
 mt.numberToChars(51) 
@@ -383,7 +394,9 @@ mt.radsToDegs(0.08726646259971647)
           <!-- String To Number -->
           <div id="stringtonumber">
             <h3>String To Number</h3>
-            <span class="sub">Passing arguments and convert string to number</span>
+            <span class="sub"
+              >Passing arguments and convert string to number</span
+            >
 
             <pre>
 mt.stringToNumber("25") 
@@ -396,7 +409,9 @@ mt.stringToNumber("25")
           <!-- Convert Number -->
           <div id="convertnumber">
             <h3>Convert Number</h3>
-            <span class="sub">Passing arguments and convert convert number</span>
+            <span class="sub"
+              >Passing arguments and convert convert number</span
+            >
 
             <pre>
 mt.convertNumber('100111', 2, 16)
@@ -438,7 +453,9 @@ mt.convertNumber('100111', 2, 16)
               <a href="#isnegative"><i>Check if the number is negative</i></a>
             </li>
             <li>
-              <a href="#ispoweroftwo"><i>Check if the number is power of two</i></a>
+              <a href="#ispoweroftwo"
+                ><i>Check if the number is power of two</i></a
+              >
             </li>
           </ul>
         </section>
@@ -556,7 +573,6 @@ mt.isPowerOfTwo(32)
         </pre
             >
           </div>
-
         </section>
 
         <!-- ================================================================== -->
@@ -898,8 +914,8 @@ mt.isPowerOfTwo(32)
             </pre>
           </div>
 
-           <!-- Selection Sort -->
-           <div id="selection">
+          <!-- Selection Sort -->
+          <div id="selection">
             <h3>Selection Sort</h3>
 
             <span class="sub">Passing array and get sorted array</span>
